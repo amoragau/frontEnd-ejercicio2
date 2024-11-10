@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as v;
+
+.nav__list__item {
+  display: inline;
+}
+.nav__list__link{
+  display: inline-block;
+  margin: 0 35px;
+  font-size: 1.2rem;
+  color: v.$first-color;
+  text-decoration: none;
+  padding: 15px;
+
+  &:hover {
+    background: v.$first-color-transparent;
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .nav__list{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: v.$fourth-color;
+    top: 7rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    &__item{
+      display: block;
+    }
+    &__link{
+      font-size: 1.5rem;
+      &:hover, a.acive {
+        background: none;
+        background: v.$first-color-transparent;
+      }
+    }
+  }
+  #navbar-close{
+    display: none;
+  }
+  #check-navbar:checked~.icons #navbar-open{
+    display: none;
+  }
+  #check-navbar:checked~.icons #navbar-close{
+    display: block;
+  }
+  #check-navbar:checked~.header__nav .nav__list{
+    left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav__list__link{
+    padding: 5px;
+  }
+}

@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+body{
+  font-family: v.$font-stack;
+}
+
+header{
+  width: 100%;
+  height: 7rem;
+
+}

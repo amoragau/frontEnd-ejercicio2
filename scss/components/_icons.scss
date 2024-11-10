@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as v;
+
+.icons{
+  display: none; 
+  text-decoration: none;
+  font-size: 2rem;
+  color: v.$first-color;
+}
+
+@media (max-width: 1024px) and (min-width: 321px) {
+  .icons{
+    display: inline-flex;
+    position: absolute;
+    right: 5%;
+  }
+}

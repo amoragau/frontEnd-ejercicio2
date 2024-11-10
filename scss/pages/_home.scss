@@ -1,0 +1,19 @@
+#img-bienvenida{
+  display: block;
+  width: 60%;
+  margin: auto auto 5vh auto;
+  @media screen and (max-width: 1024) and (min-width: 769px) {
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+}
+.servicios__img {
+  width: 100px;
+  height: 100px;
+  @media screen and (max-width: 1200px) and (min-width: 769px) {
+    width: 80px;
+    height: 80px;
+  }
+}

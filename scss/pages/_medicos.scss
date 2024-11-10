@@ -1,0 +1,15 @@
+.medicos__img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  
+}
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .medicos__list {
+    flex-direction: column;
+  }
+  .medicos__item{
+    left: 10vw;
+    width: 60vw;
+  }
+}

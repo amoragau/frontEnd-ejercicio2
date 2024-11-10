@@ -1,0 +1,40 @@
+.list__map{
+  position: relative;
+  bottom: 2rem;
+  left: 20vw;
+  & iframe{
+    height:30vh;
+    width:40vw;
+  } 
+} 
+
+  
+@media screen and (orientation:portrait) and (max-width: 768px) and (min-width: 321px) {
+  .list__map {
+    left: 0;
+    & iframe{
+      height:30vh;
+      width:80vw;
+    }
+  }
+}
+
+@media screen and (orientation:portrait) and (max-width: 768px) and (min-width: 321px) {
+  .list__map {
+    left: 0;
+    & iframe{
+      height:30vh;
+      width:80vw;
+    }
+  }
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px) {
+  .list__map {
+    left: 10vw;
+    & iframe{
+      height:40vh;
+      width:60vw;
+    }
+  }
+}

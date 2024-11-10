@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  padding: 15px 8%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: v.$third-color;
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+      & img {
+      width: auto;
+      height: 5.5rem;
+      @media screen and (max-width: 768px) {
+        left: 0;
+        /* width: auto;
+        height: 4.5rem; */
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .right__btn{
+    position: absolute;
+    right: 14%;
+  }
+}

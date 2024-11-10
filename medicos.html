@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Las Casitas - Equipo Médico</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <input type="checkbox" id="check-navbar">
+        <label for="check-navbar" class="icons">
+          <i class='bx bx-menu' id="navbar-open"></i>
+          <i class='bx bx-x' id="navbar-close"></i>
+        </label>
+      <a href="index.html" title="Ir al Home" class="header__logo"><img src="./img/Las casitas.png" alt="Logo Hospital Las Casitas"/></a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__list__item"><a href="medicos.html" class="nav__list__link" title="Equipo Médico">Equipo Médico</a></li>
+          <li class="nav__list__item"><a href="contacto.html" class="nav__list__link" title="Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__right">
+        <button class="right__btn" title="Reservar Cita" id="btn-reservar-cita">Reservar Cita</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="presentacion" class="section">
+      <div class="section__item">
+        <h1>Conoce a nuestro Equipo Médico</h1>
+        <p>
+          El hospital se compromete firmemente con la excelencia médica, garantizando una 
+          atención de calidad que coloca al paciente en el centro de todos sus procesos. 
+          A través de la implementación de prácticas basadas en evidencia, 
+          un equipo altamente calificado y el uso de tecnología avanzada, 
+          el hospital busca continuamente mejorar los resultados de salud y 
+          la seguridad de sus pacientes. 
+        </p>
+      </div>
+    </section>
+  
+    <section id="medicos" class="section">
+      <h2>Nuestros Médicos</h2>
+      <div class="section__list medicos__list">
+        <div class="list__item list__item--border list__item--border-r medicos__item">
+          <img src="./img/medico1.jpg" alt="Consultas" class="img--center medicos__img"/>
+          <h3>Andres Lopéz - Cirujano</h3>
+          <p>
+            El Dr. López es un médico cirujano con una destacada trayectoria en el ámbito de la cirugía general. 
+        </div>
+        <div class="list__item list__item--border list__item--border-r medicos__item">
+          <img src="./img/medico2.jpg" alt="Consultas" class="img--center medicos__img"/>
+          <h3>Juan Ulloa - Medicina General</h3>
+          <p>
+            El Dr. Ulloa es un médico general con una destacada trayectoria en el ámbito de la cirugía general. 
+          </p>
+        </div>
+        <div class="list__item list__item--border list__item--border-r medicos__item">
+          <img src="./img/medico3.jpg" alt="Consultas" class="img--center medicos__img"/>
+          <h3>Carla Arriagada - Pediatra</h3>
+          <p>
+            La Dra. Arriaga es una médico pediatra con una destacada trayectoria en el ámbito de la cirugía general. 
+          </p>
+        </div>
+        <div class="list__item list__item--border list__item--border-r medicos__item">
+          <img src="./img/medico4.jpg" alt="Consultas" class="img--center medicos__img"/>
+          <h3>Álvaro Falcón - Traumatologo</h3>
+          <p>
+            El Dr. falcón es un médico Traumatologo con una destacada trayectoria en el ámbito de la cirugía general. 
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Contáctanos: <a href="mailto:123@456.cl">123@456.cl</a> o llamando al <a href="tel:56991234567">+ 56 9 9123 4567</a></p> 
+    <p>Av. Salvador 364, Providencia, Región Metropolitana</p> 
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#">Quienes somos</a> ||</li>
+      <li class="footer__item"><a href="#">Sugerencias y Reclamos</a> ||</li>
+      <li class="footer__item"><a href="#">Facebook</a> ||</li>
+      <li class="footer__item"><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
